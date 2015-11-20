@@ -1,0 +1,40 @@
+Developing Data Products: Assignemnt Pitch
+========================================================
+author: Jack
+date: November 2015
+
+Overview
+========================================================
+
+The purpose of this app is to allow more people to be able to learn about exploratory data analysis without having any prior programming (R or otherwise) experience.
+
+The data set used for this example is the 'mtcars' dataset built into the R dataset package.
+
+Dataset:
+========================================================
+```{r}
+data(mtcars)
+```
+
+The 'mtcars' dataset consists of:
+* `r ncol(mtcars)` variables: `r names(mtcars)`
+* `r nrow(mtcars)` car models
+
+
+Finding relationships
+========================================================
+
+In order to determine if there are relationships between any of the variables we can plot the pairs of variables that would likely have correlation with each other. For example, based on common knowledge we know that cars generally have a trade-off between:
+* horsepower (hp) and miles per gallon (mpg)
+* horsepower (hp) and cylinder (cyl)
+* horsepower (hp) and displacement (disp)
+* etc.
+
+Using Shinyapp to explore the data:
+=========================================================
+
+To make the exploring the relationship between each of the variables simple, please use the Shinyapp:
+
+https://jackcoursera.shinyapps.io/devdataproduct
+
+Note: one important caveat to keep in mind - correlation does not imply causation, the app is strictly for exploratory analysis only. Further data analysis would be required to draw more firm conclusions.
